@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/id_la"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"
+                    android:scaleType="fitStart"
+                    android:src="@mipmap/lg_wt_bg_day_sunny" />
+
+                <ImageView
+                    android:id="@+id/id_img"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+
+                    android:src="@mipmap/light" />
+
+                <RelativeLayout
+                    android:id="@+id/id_hs"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/id_img"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@mipmap/lg_wt_bg_night_cloudy">
+
+                    <ImageView
+                        android:id="@+id/id_img_clod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@mipmap/cloud" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@mipmap/bg_thunder_storm1"
+                android:orientation="vertical">
+
+                <com.example.myapplication.rains.RainView
+                    android:id="@+id/snow_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tileSize="24"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@mipmap/lg_wt_bg_day_lightsnow">
+            <com.example.myapplication.snow.SnowView
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
