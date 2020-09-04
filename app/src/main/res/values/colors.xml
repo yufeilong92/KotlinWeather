@@ -4,5 +4,5 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="raincolor">#dfdcdd</color>
-
+    <color name="rain_point">#99A1A7</color>
 </resources>
