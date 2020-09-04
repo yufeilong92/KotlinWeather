@@ -8,6 +8,7 @@
     <com.example.myapplication.FallingView
         android:layout_width="match_parent"
         android:id="@+id/fallingview"
+        android:background="@mipmap/bg_thunder_storm1"
         android:layout_height="match_parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
